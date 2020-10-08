@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>freecocamp survey Form</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+  
+    <h1 id="title">Survey Form</h1>
+    <div>
+      <form id="survey-form">
+        <p id="description">Your honest feedback will help us improve</p>
+        <div class="container">
+          <label for="name" class="data" id="name-label">*Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+            class="textbox"
+          />
+          <label for="email" class="data" id="email-label">*Email:</label
+          ><input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+            class="textbox"
+          />
+          <label for="number" class="data" id="number-label">*Age:</label
+          ><input
+            type="number"
+            id="number"
+            name="age"
+            placeholder="Age"
+            min="0"
+            max="120"
+            class="textbox"
+          />
+          <label for="dropdown" class="data">Country</label>
+          <select id="dropdown" name="role" class="combobox">
+            <option>Select an option</option>
+            <option>Albania</option>
+            <option>Burundi</option>
+            <option>Cameroon</option>
+            <option>Denmark</option>
+          </select>
+
+          <label class="data">Can you tell a friend about freeCodeCamp?</label>
+          <div>
+            <label>
+              <input
+                type="radio"
+                name="tell"
+                value="definitely"
+                id="definitely"
+              />
+              <span>Very likely</span>
+            </label>
+
+            <label
+              ><input type="radio" name="tell" value="maybe" id="maybe" /><span
+                for="maybe"
+                >Maybe</span
+              ></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="tell"
+                value="notSure"
+                id="notSure"
+              /><span for="notSure">Not sure</span></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="tell"
+                value="maybe"
+                id="definitelynot"
+              /><span for="definitelynot">Definitely not</span></label
+            >
+</div>
+
+            <label class="data"
+            >What areas need improvement on fcc? (Check all that apply):</label
+          >
+          <div>
+            <label>
+              <input type="checkbox" name="front" value="front" /><span
+                >Front-end Projects</span
+              >
+            </label>
+            <label>
+              <input type="checkbox" name="back" value="back" /><span
+                >Back-end Projects</span
+              >
+            </label>
+            <label>
+              <input type="checkbox" name="data" value="data" /><span
+                >Data Visualization</span
+              >
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="challenges"
+                value="challenges"
+              /><span>Challenges</span>
+            </label>
+            <label>
+              <input type="checkbox" name="community" value="community" /><span
+                >Open Source Community</span
+              >
+            </label>
+            <label>
+              <input type="checkbox" name="gitter" value="gitter" /><span
+                >Gitter rooms</span
+              >
+            </label>
+          </div>
+        
+
+          <label for="comments" class="data"
+            >Any Comments or Suggestions?</label
+          >
+          <textarea
+            id="comments"
+            placeholder="Enter your comment here..."
+          ></textarea>
+      </div>
+
+        <button id="submit" type="submit" value="Submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial;
+    min-width:300px;
+    background-color:#773344;
+    margin: 0 auto;
+    width:85%;
+    
+  
+}
+
+#title{
+  color: #fff;
+  text-align: center;
+}
+#survey-form{
+  background-color:#e3b5a4;
+  padding:20px;
+  margin:0 auto;
+  width:70%;
+  border-radius:20px;
+
+}
+#description{
+  text-align: center;
+
+}
+
+.container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap:10px;
+}                            
+
+.data{
+  text-align:right;                                                                                          
+}  
+                                                                   
+.textbox {
+  
+ 
+  height:40px;
+  border: 2px solid #d44d5c;
+    border-radius: 25px;
+  background: #f5e9e2;
+  padding: 20px;
+  width: 200px;
+ 
+}
+
+
+label > input[type="radio"] {
+  display: none;
+}
+label > input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color:  #0b0014;
+}
+label > input[type="radio"]:checked + * {
+  color: #d44d5c;
+}
+label > input[type="radio"]:checked + *::before {
+  background: radial-gradient(#d44d5c 0%, #d44d5c 40%, transparent 50%, transparent);
+  border-color:#d44d5c;
+}
+
+label > input[type="radio"] + * {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+label > input[type="checkbox"] {
+  display: none;
+}
+label > input[type="checkbox"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color:  #0b0014;
+}
+label > input[type="checkbox"]:checked + * {
+  color:  #d44d5c;
+}
+label > input[type="checkbox"]:checked + *::before {
+  content: "✓";
+  color: white;
+  text-align: center;
+  background:  #d44d5c;
+  border-color: #d44d5c;
+}
+
+
+label > input[type="checkbox"] + * {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+.combobox{
+  
+  background: #f5e9e2;
+  max-width:200px;
+    height: 40px;
+    border: 2px solid #d44d5c;
+    border-radius: 25px;
+    
+ 
+}
+
+
+
+textarea{
+  border: 2px solid #d44d5c;
+    border-radius: 15px;
+    background: #f5e9e2;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  
+ 
+}
+
+
+
+button {
+  background-color: #773344; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px){
+ 
+  .container{
+      grid-template-columns: 1fr;
+  }
+  .data{
+      text-align:left;
+  }
+  #survey-form{
+      width:60%;
+  }
+  .textbox{
+    max-width: 230px;
+    height: 20px;
+}
+}
